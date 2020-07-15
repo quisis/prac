@@ -11,6 +11,13 @@ jobs:
       - python/load-cache
       - python/install-deps
       - python/save-cache
+      - run: sudo pip install jupyter_client
+      - run: sudo pip install nbconvert
+      - run: sudo pip install numpy
+      - run: sudo pip install matplotlib
+      - run: sudo pip install sklearn
+      - run: sudo python3 -m pip install ipykernel
+      - run: sudo python3 -m ipykernel install --user
       - run:
           command: jupyter nbconvert --execute Image.ipynb
           name: Test
