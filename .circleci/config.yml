@@ -21,6 +21,9 @@ jobs:
       - run:
           command: jupyter nbconvert --execute Image.ipynb
           name: Test
+      - store_artifacts:
+          path: ./Image.html
+          destination: Image.html
 
 workflows:
   main:
