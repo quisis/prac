@@ -12,11 +12,7 @@ jobs:
       - python/install-deps
       - python/save-cache
       - run:
-          command: |
-            sudo pip install pipenv
-            pipenx install 
-      - run:
-          command: pipenv run jupyter nbconvert --to html Image.ipynb
+          command: jupyter nbconvert --to html Image.ipynb
           name: Test
 
 workflows:
