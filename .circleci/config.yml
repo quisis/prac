@@ -12,7 +12,7 @@ jobs:
       - python/install-deps
       - python/save-cache
       - run:
-          command: jupyter nbconvert --to html Image.ipynb
+          command: jupyter nbconvert --execute Image.ipynb
           name: Test
 
 workflows:
