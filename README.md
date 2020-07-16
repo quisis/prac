@@ -1,3 +1,4 @@
 # prac
 
-<img src="https://circleci.com/gh/quisis.png?circle-token=af50979">
+[![<CircleCI>](https://circleci.com/gh/quisis/prac/tree/circleci-project-setup.svg?style=svg)](https://app.circleci.com/pipelines/github/quisis/prac/tree/circleci-project-setup)
+ 
